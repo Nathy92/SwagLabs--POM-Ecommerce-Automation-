@@ -14,7 +14,7 @@ public class LoginUser extends BaseClass{
 		loginPageObj.setUsername("standard_user");
 		loginPageObj.setPassWord("secret_sauce");
 		loginPageObj.clickLoginBtn();
-		Thread.sleep(5000);; 
+		
 	}
 	
 
