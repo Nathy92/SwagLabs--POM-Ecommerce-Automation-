@@ -7,9 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPageObjects {
-
+   
+	
 	WebDriver ldriver;
    
+	//Constructor & Pagefactory
 	public LoginPageObjects(WebDriver rdriver) {
 		this.ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
