@@ -30,6 +30,16 @@ public class AddToCartPageObjects {
 		@CacheLookup
 		WebElement btnViewCart;
 		
+		//Click 1-st product
+		@FindBy(xpath ="//*[@id=\"item_4_title_link\"]/div")
+		@CacheLookup
+		WebElement clickFirstProd;
+		
+		@FindBy(xpath ="//*[@id=\"inventory_item_container\"]/div/div/div[2]/div[1]")
+		@CacheLookup
+		WebElement validateElem;
+		
+		
 		public void addFirstBag() {
 			btnAddFirstBag.click();
 		}
@@ -42,6 +52,16 @@ public class AddToCartPageObjects {
 			btnViewCart.click();
 		}
 		
+		public void clickFirstProd() {
+			clickFirstProd.click();
+		}
+		
+		
+		public void validateItem(String item) {
+			String item1 = validateElem.getText();
+		}
+		
+	
 		
 	
 	

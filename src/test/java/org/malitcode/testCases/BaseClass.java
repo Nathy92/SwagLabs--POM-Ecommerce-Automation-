@@ -37,6 +37,17 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
+	
+	//validation method
+		public boolean validateItemName(String nameItem) {
+			return driver.getPageSource().contains(nameItem);
+		}
+		
+		public boolean validateItemPrice(String price) {
+			return driver.getPageSource().contains(price);
+		}
+		
+
 
 	@AfterClass
 	public void tearDown() {

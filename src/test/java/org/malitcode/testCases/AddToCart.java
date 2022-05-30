@@ -21,9 +21,10 @@ public class AddToCart extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		addtocartObjects.addFirstBag();
 		addtocartObjects.addSecondBag();
-		Thread.sleep(5000);
-		addtocartObjects.clickViewCart();
 		
+		addtocartObjects.clickViewCart();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		addtocartObjects.clickFirstProd();
 		
 	}
 
