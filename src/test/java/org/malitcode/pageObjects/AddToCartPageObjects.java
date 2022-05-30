@@ -6,6 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import org.testng.Assert;
+
 public class AddToCartPageObjects {
 	
 	WebDriver ldriver;
@@ -35,9 +37,15 @@ public class AddToCartPageObjects {
 		@CacheLookup
 		WebElement clickFirstProd;
 		
-		@FindBy(xpath ="//*[@id=\"inventory_item_container\"]/div/div/div[2]/div[1]")
+		@FindBy(xpath ="//div[@class=\"inventory_details_name large_size\" and text()='Sauce Labs Backpack']")
 		@CacheLookup
 		WebElement validateElem;
+		
+		@FindBy(xpath ="//div[@class=\"inventory_details_price\"]")
+		@CacheLookup
+		WebElement validatePrice;
+		
+		
 		
 		
 		public void addFirstBag() {
@@ -56,12 +64,18 @@ public class AddToCartPageObjects {
 			clickFirstProd.click();
 		}
 		
-		
-		public void validateItem(String item) {
+		//Validate per item (Item name and Price)
+		public void validateItem(String items, String price) {
+			String price1 = validatePrice.getText();
 			String item1 = validateElem.getText();
+
+			if (item1.equals(items) &&  price1.equals(price)) {
+				Assert.assertTrue(true);
+			} else {
+				Assert.assertFalse(false);
+			}
 		}
 		
-	
 		
 	
 	
