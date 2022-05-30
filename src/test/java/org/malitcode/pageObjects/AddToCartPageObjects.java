@@ -45,8 +45,7 @@ public class AddToCartPageObjects {
 		@CacheLookup
 		WebElement validatePrice;
 		
-		
-		
+	
 		
 		public void addFirstBag() {
 			btnAddFirstBag.click();
