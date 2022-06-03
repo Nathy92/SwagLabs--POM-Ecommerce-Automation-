@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginPageObjects {
    
@@ -31,6 +32,10 @@ public class LoginPageObjects {
 	@CacheLookup
 	WebElement btnLogin;
 	
+	@FindBy(xpath ="//*[@id=\"header_container\"]/div[2]/span")
+	@CacheLookup
+	WebElement textProducts;
+	
 	
 	//methods
 	public void setUsername(String userName) {
@@ -43,6 +48,15 @@ public class LoginPageObjects {
 	
 	public void clickLoginBtn() {
 		btnLogin.click();
+	}
+	
+	//Validate login
+	public void validateLogin() {
+		if(textProducts.isDisplayed()) {
+			Assert.assertTrue(true);
+		}else {
+			Assert.assertTrue(false);
+		}
 	}
 
 }
