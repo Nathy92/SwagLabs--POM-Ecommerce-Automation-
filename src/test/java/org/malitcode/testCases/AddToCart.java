@@ -20,18 +20,22 @@ public class AddToCart extends BaseClass {
 	public void addToCart() throws InterruptedException {
 
 		driver.get(baseURL);
-		logger.info("URL Opened");
+		logger.info("Add To Cart - URL Opened");
 		LoginPageObjects loginPageObj = new LoginPageObjects(driver);
 		AddToCartPageObjects addtocartObjects = new AddToCartPageObjects(driver);
 		loginPageObj.setUsername("standard_user");
+		logger.info("Add To Cart - username entered");
 		loginPageObj.setPassWord("secret_sauce");
+		logger.info("Add To Cart - password entered");
 		loginPageObj.clickLoginBtn();
+		logger.info("Add To Cart - Login Button Clicked");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		addtocartObjects.addFirstBag();
 		addtocartObjects.addSecondBag();
         
 		//View Cart
 		addtocartObjects.clickViewCart();
+		logger.info("Add To Cart - View Cart Clicked");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		addtocartObjects.clickFirstProd();
 		
@@ -45,6 +49,7 @@ public class AddToCart extends BaseClass {
 		sidebarObjects.clickSideBar();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		sidebarObjects.clickLogout();
+		logger.info("Add To Cart - Logout Button Clicked");
 	
 		 
 

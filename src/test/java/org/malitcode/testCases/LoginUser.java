@@ -9,11 +9,14 @@ public class LoginUser extends BaseClass{
 	public void loginUser() throws InterruptedException {
 
 		driver.get(baseURL);
-		logger.info("URL Opened");
+		logger.info("Login User - URL Opened");
 		LoginPageObjects loginPageObj = new LoginPageObjects(driver);
 		loginPageObj.setUsername("standard_user");
+		logger.info("Login User - Username Entered");
 		loginPageObj.setPassWord("secret_sauce");
+		logger.info("Login User - Password Entered");
 		loginPageObj.clickLoginBtn();
+		logger.info("Login User - Login Button Clicked");
 		
 	}
 	
