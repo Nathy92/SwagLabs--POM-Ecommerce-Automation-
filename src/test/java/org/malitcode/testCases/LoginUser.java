@@ -11,9 +11,9 @@ public class LoginUser extends BaseClass{
 		driver.get(baseURL);
 		logger.info("Login User - URL Opened");
 		LoginPageObjects loginPageObj = new LoginPageObjects(driver);
-		loginPageObj.setUsername("standard_user");
+		loginPageObj.setUsername(username);
 		logger.info("Login User - Username Entered");
-		loginPageObj.setPassWord("secret_sauce");
+		loginPageObj.setPassWord(password);
 		logger.info("Login User - Password Entered");
 		loginPageObj.clickLoginBtn();
 		logger.info("Login User - Login Button Clicked");

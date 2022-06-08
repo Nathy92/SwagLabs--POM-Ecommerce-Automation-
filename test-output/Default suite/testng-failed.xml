@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.malitcode.testCases.AboutPage">
+      <class name="org.malitcode.testCases.Filters">
         <methods>
           <include name="tearDown"/>
+          <include name="filster"/>
           <include name="setUp"/>
-          <include name="aboutPage"/>
         </methods>
-      </class> <!-- org.malitcode.testCases.AboutPage -->
+      </class> <!-- org.malitcode.testCases.Filters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

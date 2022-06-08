@@ -19,6 +19,10 @@ public class BaseClass {
  
 	ReadConfig readConfig = new ReadConfig();
 	public WebDriver driver;
+	
+	public static String username = "standard_user";
+	public static String password = "secret_sauce";
+	
 	public static String queryTitle = "Cross Browser Testing, Selenium Testing, Mobile Testing | Sauce Labs";
 	public static Logger logger;
 	public String baseURL = readConfig.getApplicationURL();
