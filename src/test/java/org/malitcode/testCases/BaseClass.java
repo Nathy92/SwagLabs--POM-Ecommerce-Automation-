@@ -34,6 +34,8 @@ public class BaseClass {
 	public static Logger logger;
 	public String baseURL = readConfig.getApplicationURL();
 
+	
+	//Cross browsing Functionality
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(String br) {
@@ -41,7 +43,7 @@ public class BaseClass {
 		logger = Logger.getLogger("Swag Labs Automation");
 		PropertyConfigurator.configure("Log4j.properties");
 		
-		// Launch required browser
+		// Launch required browser as per user
 		if (br.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
 			driver = new ChromeDriver();
@@ -65,11 +67,12 @@ public class BaseClass {
 		return driver.getPageSource().contains(nameItem);
 	}
 
+	//validate price method
 	public boolean validateItemPrice(String price) {
 		return driver.getPageSource().contains(price);
 	}
 	
-
+    //Close browser
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
