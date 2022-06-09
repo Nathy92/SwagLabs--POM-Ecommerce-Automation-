@@ -26,3 +26,21 @@
 2022-06-08 13:46:05,949 [main] INFO Swag Labs Automation - Filter - URL Opened
 2022-06-08 13:46:06,179 [main] INFO Swag Labs Automation - Filter - Username Captured
 2022-06-08 13:46:06,419 [main] INFO Swag Labs Automation - Filter - Password Captured
+2022-06-09 09:56:25,425 [main] INFO Swag Labs Automation - About Page - URL Opened
+2022-06-09 09:56:25,557 [main] INFO Swag Labs Automation - About Page - Username Entered
+2022-06-09 09:56:25,650 [main] INFO Swag Labs Automation - About Page - Password Entered
+2022-06-09 09:56:25,783 [main] INFO Swag Labs Automation - About Page - Login Button Clicked
+2022-06-09 09:56:30,610 [main] INFO Swag Labs Automation - About Page - About Link Clicked
+2022-06-09 09:56:32,269 [main] INFO Swag Labs Automation - Add To Cart - URL Opened
+2022-06-09 09:56:32,410 [main] INFO Swag Labs Automation - Add To Cart - username entered
+2022-06-09 09:56:32,514 [main] INFO Swag Labs Automation - Add To Cart - password entered
+2022-06-09 09:56:32,652 [main] INFO Swag Labs Automation - Add To Cart - Login Button Clicked
+2022-06-09 09:56:32,926 [main] INFO Swag Labs Automation - Add To Cart - View Cart Clicked
+2022-06-09 09:56:33,285 [main] INFO Swag Labs Automation - Add To Cart - Logout Button Clicked
+2022-06-09 09:56:34,882 [main] INFO Swag Labs Automation - Filter - URL Opened
+2022-06-09 09:56:35,090 [main] INFO Swag Labs Automation - Filter - Username Captured
+2022-06-09 09:56:35,305 [main] INFO Swag Labs Automation - Filter - Password Captured
+2022-06-09 09:56:36,955 [main] INFO Swag Labs Automation - Login User - URL Opened
+2022-06-09 09:56:37,084 [main] INFO Swag Labs Automation - Login User - Username Entered
+2022-06-09 09:56:37,172 [main] INFO Swag Labs Automation - Login User - Password Entered
+2022-06-09 09:56:37,309 [main] INFO Swag Labs Automation - Login User - Login Button Clicked

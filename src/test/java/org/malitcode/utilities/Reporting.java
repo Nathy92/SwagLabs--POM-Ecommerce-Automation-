@@ -45,10 +45,10 @@ public class Reporting extends TestListenerAdapter
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("Host name","localhost");
 		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("Nkosi","Deal-X-Automation");
+		extent.setSystemInfo("Nkosi","SwagLabs Automation");
 		
-		htmlReporter.config().setDocumentTitle("Deal-X-Automation"); // Title of report
-		htmlReporter.config().setReportName("Deal-X-Automation Report"); // name of the report
+		htmlReporter.config().setDocumentTitle("SwagLabs - Automation"); // Title of report
+		htmlReporter.config().setReportName("SwagLabs Automation Report"); // name of the report
 		//htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		
 		htmlReporter.config().setTheme(Theme.DARK);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SwagLabs Web Automation">
+
+	<listeners>
+		<listener class-name="org.malitcode.utilities.Reporting" />
+	</listeners>
+
+	<test name="SwagLabs Web Automatin">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+				<class name="org.malitcode.testCases.AboutPage" />
+				<class name="org.malitcode.testCases.AddToCart" />
+				<class name="org.malitcode.testCases.Filters" />
+				<class name="org.malitcode.testCases.LoginUser" />
+		</classes>
+	</test>
+
+</suite>

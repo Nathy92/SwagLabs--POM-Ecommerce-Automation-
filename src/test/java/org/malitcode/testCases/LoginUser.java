@@ -17,8 +17,9 @@ public class LoginUser extends BaseClass{
 		logger.info("Login User - Password Entered");
 		loginPageObj.clickLoginBtn();
 		logger.info("Login User - Login Button Clicked");
-		loginPageObj.validateLogin();
 		
+	    loginPageObj.validateLogin();
+	    		
 	}
 	
 

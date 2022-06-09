@@ -43,6 +43,7 @@ public class AddToCart extends BaseClass {
 		
 		//Validate Item & Price
 		addtocartObjects.validateItem(item,price);
+			
 		
 		//Click Side bar
 		SideBarObjects sidebarObjects = new SideBarObjects(driver);
